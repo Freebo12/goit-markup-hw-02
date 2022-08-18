@@ -5,30 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <style>
+      body {
+        font-family: 'roboto', 'Raleway';
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header"></header>
-    <!--header navigation-->
-    <nav>
-      <a class="logo" href=" https://freebo12.github.io/goit-markup-hw-01/" 
-        ><img
-          src="https://raw.githubusercontent.com/Freebo12/goit-markup-hw-01/e03e0a6c432729918b54d51c32069ed9e02d8b0b/images/header/logo.svg"
-          alt="webstudio_logo"
-          width="145"
-          height="35"
-      /></a>
-      <ul class="nav">
-        <li><a href="http://127.0.0.1:5500/index.html">Студія</a></li>
-        <li><a href="http://127.0.0.1:5500/portfolio.html">Портфоліо</a></li>
-        <li><a href="">Контакти</a></li>
+    <header class="header">
+      <!--header-->
+      <nav class="nav">
+        <a href="http://127.0.0.1:5500/index.html"
+          ><img
+            src="https://raw.githubusercontent.com/Freebo12/goit-markup-hw-01/e03e0a6c432729918b54d51c32069ed9e02d8b0b/images/header/logo.svg"
+            alt="webstudio_logo"
+            width="145"
+            height="35"
+        /></a>
+        <ul class="list-header">
+          <li class="item-header-main">
+            <a class="link-header" href="/index.html">Студія</a>
+          </li>
+          <li class="item-header"><a class="link-header" href="">Портфоліо</a></li>
+          <li class="item-header"><a class="link-header" href="">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-    <!--adress header-->
-    <ul class="head-adress">
-      <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
+    </header>
     <main></main>
     <!---section-button-nav-main-->
     <section class="button-sec">
@@ -139,18 +155,14 @@
       </ul>
     </section>
     <footer class="footer">
-      <!--logo-adress-->
-      <a href=" https://freebo12.github.io/goit-markup-hw-01/" class="logo"
-        ><img
-          src="https://raw.githubusercontent.com/Freebo12/goit-markup-hw-01/e03e0a6c432729918b54d51c32069ed9e02d8b0b/images/header/logo.svg"
-          alt="webstudio_logo"
-          width="145"
-          height="35"
+      <a href="http://127.0.0.1:5500/index.html"
+        ><img src="images/header/footer.svg" alt="webstudio_logo" width="145" height="35"
       /></a>
-      <address class="footer-adress">
-        <ul>
-          <li>
+      <address class="adress">
+        <ul class="adress-list">
+          <li class="adress-item">
             <a
+              class="address-map"
               href="https://goo.gl/maps/4gL3Jrbb5bLPBRH38"
               target="_blank"
               rel="noopener noreferer nofollow"
@@ -158,10 +170,12 @@
             >
           </li>
 
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="adress-item">
+            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="address-link">
+            <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
