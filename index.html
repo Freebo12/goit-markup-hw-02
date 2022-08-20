@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webstudio</title>
     <style>
-      body {font-family: 'roboto', 'Raleway';}
+      body {
+        font-family: 'roboto', 'Raleway';
+        background-color: #ffffff;
+        color: #212121;
+      }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,9 +34,11 @@
         /></a>
         <ul class="list-header">
           <li class="item-header-main">
-            <a class="link-header" href="/index.html">Студія</a>
+            <a class="current" href="/index.html">Студія</a>
           </li>
-          <li class="item-header"><a class="link-header" href="">Портфоліо</a></li>
+          <li class="item-header">
+            <a class="link-header" href="http://127.0.0.1:5500/portfolio.html">Портфоліо</a>
+          </li>
           <li class="item-header"><a class="link-header" href="">Контакти</a></li>
         </ul>
       </nav>
@@ -167,11 +173,7 @@
     </main>
     <footer class="footer">
       <a href="http://127.0.0.1:5500/index.html"
-        ><img
-          src="images/header/footer.svg"
-          alt="webstudio_logo"
-          width="145"
-          height="35"
+        ><img src="images/header/footer.svg" alt="webstudio_logo" width="145" height="35"
       /></a>
       <address class="adress">
         <ul class="adress-list">
@@ -188,7 +190,9 @@
           <li class="adress-item">
             <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="address-link"><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="address-link">
+            <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
