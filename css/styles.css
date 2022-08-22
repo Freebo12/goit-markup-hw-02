@@ -6,18 +6,16 @@
   --active-color: #ffffff;
   --img-color: #eeeeee;
   --button-bg: #188ce8;
+  --link-color: #ffffff99;
+  --btn-background: #f5f4fa;
 }
 
 body {
   font-family: 'roboto', 'Raleway';
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--active-color);
+  color: var(--titlle-color);
 }
-/*header*/
-.header {
-  font-size: 14px;
-  font-weight: 500;
-}
+
 .logo {
   font-weight: 700;
   font-size: 26px;
@@ -46,6 +44,10 @@ body {
 }
 .item-header:hover {
   color: var(--focus-hover-color);
+}
+.item-header:focus {
+  color: var(--focus-hover-color);
+  background-color: var(--active-color);
 }
 
 .link-header {
@@ -128,17 +130,6 @@ body {
 
 /*list x4*/
 
-.main-tittle {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-}
 .main-list {
   font-weight: 700;
   font-size: 14px;
@@ -188,7 +179,7 @@ body {
 .team-list {
   list-style: none;
 }
-.team-item {
+.team-sub {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -198,6 +189,11 @@ body {
 
 .team-article {
   color: var(--article-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*footer*/
@@ -243,7 +239,7 @@ body {
 .address-link {
   font-size: 14px;
   line-height: calc(24 / 14);
-  color: #ffffff99;
+  color: var(--link-color);
   text-decoration: none;
 }
 .address-link:hover {
@@ -274,7 +270,7 @@ body {
 }
 
 .btn-button {
-  background-color: #f5f4fa;
+  background-color: var(--btn-background);
   color: var(--titlle-color);
   font-weight: 500;
   font-size: 16px;
@@ -316,7 +312,6 @@ body {
 .section-desc {
   font-size: 16px;
   line-height: calc(30 / 16);
-
   letter-spacing: 0.03em;
   color: var(--article-color);
 }
